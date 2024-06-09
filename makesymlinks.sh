@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh private scrotwm.conf Xresources"    # list of files/folders to symlink in homedir
+files="bashrc vimrc vim zshrc ohmyzsh private scrotwm.conf Xresources"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -34,7 +34,7 @@ install_zsh () {
 # Test to see if zshell is installed.  If it is:
 if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     # Clone my oh-my-zsh repository from GitHub only if it isn't already present
-    if [[ ! -d $dir/oh-my-zsh/ ]]; then
+    if [[ ! -d $dir/ohmyzsh/ ]]; then
         git clone https://github.com/ohmyzsh/ohmyzsh.git
     fi
     # Set the default shell to zsh if it isn't currently set to zsh
